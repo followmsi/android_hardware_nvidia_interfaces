@@ -14,6 +14,7 @@ hidl_package_root {
 }
 
 subdirs = [
+    "power/1.0",
     "shieldtech/inputflinger/1.0",
     "shieldtech/inputflinger/2.0",
     "shieldtech/input/1.0",
