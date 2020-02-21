@@ -14,6 +14,7 @@ hidl_package_root {
 }
 
 subdirs = [
+    "nvwifi/1.0",
     "power/1.0",
     "shieldtech/inputflinger/1.0",
     "shieldtech/inputflinger/2.0",
