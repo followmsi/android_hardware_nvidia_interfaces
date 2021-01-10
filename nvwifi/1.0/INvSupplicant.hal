@@ -20,7 +20,7 @@ interface INvSupplicant {
     getMacAddress(
         ) generates (
             NvSupplicantStatus status,
-            vec<uint8_t> address
+            uint8_t[6] address
         );
 
     getMaxLinkSpeed(
@@ -55,7 +55,7 @@ interface INvSupplicant {
         );
 
     setCountryCodeNV(
-            vec<uint8_t> ccode
+            uint8_t[2] ccode
         ) generates (
             NvSupplicantStatus status
         );
