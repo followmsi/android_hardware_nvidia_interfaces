@@ -3,15 +3,13 @@
 hidl_interface {
     name: "vendor.nvidia.hardware.factoryservice@1.0",
     root: "vendor.nvidia.hardware",
+    product_specific: true,
     srcs: [
         "types.hal",
         "IFactoryService.hal",
     ],
     interfaces: [
         "android.hidl.base@1.0",
-    ],
-    types: [
-        "FctServiceStatus",
     ],
     gen_java: true,
 }

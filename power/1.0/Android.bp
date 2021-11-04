@@ -3,6 +3,7 @@
 hidl_interface {
     name: "vendor.nvidia.hardware.power@1.0",
     root: "vendor.nvidia.hardware",
+    product_specific: true,
     srcs: [
         "types.hal",
         "IPower.hal",
@@ -10,12 +11,6 @@ hidl_interface {
     interfaces: [
         "android.hardware.power@1.0",
         "android.hidl.base@1.0",
-    ],
-    types: [
-        "AppProfileKnob",
-        "CameraHintData",
-        "ExtPowerHint",
-        "NvCPLHintData",
     ],
     gen_java: true,
 }
