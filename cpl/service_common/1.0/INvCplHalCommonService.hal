@@ -1,0 +1,24 @@
+package vendor.nvidia.hardware.cpl.service_common@1.0;
+
+interface INvCplHalCommonService {
+    getAppProfileSettingString(
+            string pkgName,
+            int32_t settingId
+        ) generates (
+            string profile
+        );
+
+    getAppProfileSettingInt(
+            string pkgName,
+            int32_t settingId
+        ) generates (
+            int32_t profile
+        );
+
+    getAppProfileSettingBoolean(
+            string pkgName,
+            int32_t settingId
+        ) generates (
+            int32_t profile
+        );
+};
