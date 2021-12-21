@@ -1,0 +1,17 @@
+package vendor.nvidia.hardware.graphics.mempool@1.0;
+
+/** Proper values for this are unknown. */
+enum Error : int32_t {
+    INVALID = 0,
+};
+
+/** Proper values for this are unknown. */
+enum NvMemPoolSlotStatus : int32_t {
+    INVALID = 0,
+};
+
+struct NvMemPoolHandle {
+    uint32_t val1;
+    uint32_t val2;
+    handle val3;
+};

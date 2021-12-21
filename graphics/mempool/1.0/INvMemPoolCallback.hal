@@ -1,0 +1,10 @@
+package vendor.nvidia.hardware.graphics.mempool@1.0;
+
+interface INvMemPoolCallback {
+    onCommitWrite(
+            uint32_t val
+        );
+
+    onGetRegisteredPool(
+        );
+};

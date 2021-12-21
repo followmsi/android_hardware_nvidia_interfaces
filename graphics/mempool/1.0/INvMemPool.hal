@@ -1,0 +1,54 @@
+package vendor.nvidia.hardware.graphics.mempool@1.0;
+
+import INvMemPoolCallback;
+
+interface INvMemPool {
+    setServerPool(
+            NvMemPoolHandle val
+        );
+
+    beginWrite(
+        ) generates (
+            Error err,
+            uint32_t val
+        );
+
+    getServerPool(
+        ) generates (
+            NvMemPoolHandle val
+        );
+
+    beginRead(
+            uint32_t val
+        ) generates (
+            Error err
+        );
+
+    registerExtCallback(
+            INvMemPoolCallback callback
+        );
+
+    commitRead(
+            uint32_t val
+        ) generates (
+            Error err
+        );
+
+    commitWrite(
+            uint32_t val
+        ) generates (
+            Error err
+        );
+
+    getSlotStatus(
+            uint32_t slot
+        ) generates (
+            NvMemPoolSlotStatus status
+        );
+
+    cancelWrite(
+            uint32_t val
+        ) generates (
+            Error err
+        );
+};
