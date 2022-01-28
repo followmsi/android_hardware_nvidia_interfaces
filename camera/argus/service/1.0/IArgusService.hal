@@ -1,0 +1,8 @@
+package vendor.nvidia.hardware.camera.argus.service@1.0;
+
+interface IArgusService {
+    createClientSocket(
+        ) generates (
+            handle hnd
+        );
+};

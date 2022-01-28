@@ -1,0 +1,6 @@
+package vendor.nvidia.hardware.camera.device@3.2;
+
+import android.hardware.camera.device@3.2::ICameraDeviceSession;
+
+interface ICameraDeviceSession extends android.hardware.camera.device@3.2::ICameraDeviceSession {
+};

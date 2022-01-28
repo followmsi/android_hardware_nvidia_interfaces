@@ -1,0 +1,16 @@
+package vendor.nvidia.hardware.camera.provider@2.4;
+
+import android.hardware.camera.common@1.0::Status;
+import android.hardware.camera.device@1.0::ICameraDevice;
+import android.hardware.camera.device@3.2::ICameraDevice;
+import android.hardware.camera.provider@2.4::ICameraProvider;
+
+interface ICameraProvider extends android.hardware.camera.provider@2.4::ICameraProvider {
+    // What is this...
+    dummyMethod(
+            android.hardware.camera.device@1.0::ICameraDevice val1,
+            android.hardware.camera.device@3.2::ICameraDevice val2
+        ) generates (
+            Status ret
+        );
+};

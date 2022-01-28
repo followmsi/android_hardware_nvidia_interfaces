@@ -1,0 +1,12 @@
+package vendor.nvidia.hardware.camera.device@3.2;
+
+import android.hardware.camera.common@1.0::Status;
+import android.hardware.camera.device@3.2::ICameraDevice;
+
+interface ICameraDevice extends android.hardware.camera.device@3.2::ICameraDevice {
+    setClientName(
+            string val 
+        ) generates (
+            Status ret
+        );
+};
