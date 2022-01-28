@@ -1,0 +1,14 @@
+package vendor.nvidia.hardware.phs@1.0;
+
+interface INVPHS {
+    setPHSClientSHQ(
+            int32_t val1,
+            int32_t val2,
+            handle hnd
+        );
+
+    getPHSCCB(
+        ) generates (
+            handle hnd
+        );
+};
