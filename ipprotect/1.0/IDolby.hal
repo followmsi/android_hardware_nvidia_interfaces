@@ -1,0 +1,11 @@
+package vendor.nvidia.hardware.ipprotect@1.0;
+
+interface IDolby {
+    decrypt_blob(
+            vec<uint8_t> val1,
+            vec<uint8_t> val2
+        ) generates (
+            vec<uint8_t> ret1,
+            int32_t ret2
+        );
+};
