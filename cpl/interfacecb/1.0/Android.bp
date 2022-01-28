@@ -3,7 +3,7 @@
 hidl_interface {
     name: "vendor.nvidia.hardware.cpl.interfacecb@1.0",
     root: "vendor.nvidia.hardware",
-    product_specific: true,
+    system_ext_specific: true,
     srcs: [
         "INvCplInterfaceManager.hal",
     ],
@@ -14,4 +14,3 @@ hidl_interface {
     ],
     gen_java: true,
 }
-

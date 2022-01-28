@@ -3,7 +3,7 @@
 hidl_interface {
     name: "vendor.nvidia.hardware.shieldtech.rpx@1.0",
     root: "vendor.nvidia.hardware",
-    product_specific: true,
+    system_ext_specific: true,
     srcs: [
         "IRpxBinder.hal",
     ],
@@ -12,4 +12,3 @@ hidl_interface {
     ],
     gen_java: true,
 }
-
