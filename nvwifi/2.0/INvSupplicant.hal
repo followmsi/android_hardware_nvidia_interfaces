@@ -1,0 +1,6 @@
+package vendor.nvidia.hardware.nvwifi@2.0;
+
+import vendor.nvidia.hardware.nvwifi@1.0::INvSupplicant;
+
+interface INvSupplicant extends vendor.nvidia.hardware.nvwifi@1.0::INvSupplicant {
+};
