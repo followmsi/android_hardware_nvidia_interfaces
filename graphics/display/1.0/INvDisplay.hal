@@ -178,4 +178,14 @@ interface INvDisplay {
 
     unregisterDeepISPCallback(
         );
+
+    allmIsSupported(
+        ) generates (
+            bool value
+        );
+
+    allmEnable(
+            int32_t val1,
+            bool val2
+        );
 };
